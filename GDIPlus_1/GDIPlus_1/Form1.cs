@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,7 @@ namespace GDIPlus_1
         {
             Graphics g = e.Graphics;
             Pen mypen = new Pen(Color.Black, 1);
+            mypen.DashStyle = DashStyle.Dash;
             g.DrawRectangle(mypen, 10, 10, 200, 200);
             mypen.Width = 4;
             mypen.Color = Color.Pink;
