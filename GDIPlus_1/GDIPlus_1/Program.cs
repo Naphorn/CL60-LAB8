@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GDIPlus_1
+namespace Lab08
 {
     static class Program
     {
