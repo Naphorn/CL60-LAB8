@@ -21,22 +21,15 @@ namespace GDIPlus_1
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            // Draw circle
-            Rectangle rect = new Rectangle(10, 10, 100, 100);
-            g.DrawEllipse(Pens.Purple, rect);
+            // Draw reference ellipse with dash line.
+            Pen penEllipse = new Pen(Color.Brown);
+            penEllipse.DashStyle = DashStyle.Dash;
+            g.DrawEllipse(penEllipse, 20, 20, 200, 150);
 
-            //Fill circle
-            Rectangle rect1 = new Rectangle(10, 120, 100, 100);
-            g.FillEllipse(Brushes.DeepPink, rect1);
+            // Draw arc
+            Pen penArc = new Pen(Color.Magenta, 2);
+            g.DrawArc(penArc, 20, 20, 200, 150, 90, 180);
 
-            //Draw ellipse
-            Rectangle rect2 = new Rectangle(150, 10, 120, 100);
-            g.DrawEllipse(Pens.DarkSlateBlue, rect2);
-
-            //Fill ellipse
-            Rectangle rect3 = new Rectangle(150, 120, 120, 100);
-            g.FillEllipse(Brushes.Firebrick, rect3);
-            
             g.Dispose();
         }
     }
