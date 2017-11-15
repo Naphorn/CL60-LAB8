@@ -22,10 +22,14 @@ namespace GDIPlus_1
         {
             Graphics g = e.Graphics;
             Pen myPen = new Pen(Color.Blue, 3);
-            g.DrawRectangle(myPen, 10, 120, 100, 100);
+            Rectangle[] rects = {
+                new Rectangle(20, 20, 120, 20),
+            new Rectangle(20, 50, 120, 30),
+            new Rectangle(20, 90, 120, 40),
+            new Rectangle(20, 140, 120, 60)
+        };
 
-            Rectangle rect = new Rectangle(10, 10, 100, 100);
-            g.DrawRectangle(myPen, rect);
+            g.DrawRectangles(myPen, rects);
             g.Dispose();
         }
     }
