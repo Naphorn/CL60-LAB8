@@ -22,23 +22,13 @@ namespace GDIPlus_3
             Graphics g = e.Graphics;
             Bitmap bmp = new Bitmap("D:\\Capture.PNG");
             this.SetClientSizeCore(bmp.Width, bmp.Height);
-            Rectangle topLeft = new Rectangle(0, 0, bmp.Width / 2, bmp.Height / 2);
-            Rectangle topRight = new Rectangle(bmp.Width / 2, 0, bmp.Width / 2, bmp.Height / 2);
-            Rectangle bottonLeft = new Rectangle(0, bmp.Height / 2, bmp.Width / 2, bmp.Height / 2);
-            Rectangle bottonRight = new Rectangle(bmp.Width / 2, bmp.Height / 2, bmp.Width / 2, bmp.Height / 2);
-
-            bmp.RotateFlip(RotateFlipType.RotateNoneFlipNone);
-            e.Graphics.DrawImage(bmp, topLeft);
-
-            bmp.RotateFlip(RotateFlipType.RotateNoneFlipX);
-            e.Graphics.DrawImage(bmp, topRight);
-
-            bmp.RotateFlip(RotateFlipType.Rotate180FlipNone);
-            e.Graphics.DrawImage(bmp, bottonLeft);
-
-            bmp.RotateFlip(RotateFlipType.Rotate180FlipY);
-            e.Graphics.DrawImage(bmp, bottonRight);
-
+            Rectangle desRect = new Rectangle(0, 0, bmp.Width, bmp.Height);
+            Brush myBrush = new SolidBrush(Color.Coral);
+            g.DrawImage(bmp, desRect);
+            g.DrawString("Hello World",
+                new Font("Verdana", 30, FontStyle.Bold),
+                myBrush, 0, 0);
+            
             g.Dispose();
         }
     }
