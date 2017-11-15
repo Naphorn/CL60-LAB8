@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDIPlus_3", "GDIPlus_3\GDIPlus_3.csproj", "{F884B5E2-C8FF-498D-A194-0B47DBC25C1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F884B5E2-C8FF-498D-A194-0B47DBC25C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F884B5E2-C8FF-498D-A194-0B47DBC25C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F884B5E2-C8FF-498D-A194-0B47DBC25C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F884B5E2-C8FF-498D-A194-0B47DBC25C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E02E11B-3D43-4E45-BD07-231391126227}
+	EndGlobalSection
+EndGlobal
